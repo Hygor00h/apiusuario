@@ -2,6 +2,7 @@ package com.javanauta.apiusuario.infrastructure.security;
 
 
 import com.javanauta.apiusuario.infrastructure.entity.Usuario;
+import com.javanauta.apiusuario.infrastructure.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -13,7 +14,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     // Repositório para acessar dados de usuário no banco de dados
     @Autowired
-    private com.javanauta.cadastro_usuario.infrastructure.repository.UsuarioRepository usuarioRepository;
+    private UsuarioRepository usuarioRepository;
 
     // Implementação do método para carregar detalhes do usuário pelo e-mail
     @Override

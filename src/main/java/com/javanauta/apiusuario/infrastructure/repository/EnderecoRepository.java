@@ -1,4 +1,4 @@
-package com.javanauta.cadastro_usuario.infrastructure.repository;
+package com.javanauta.apiusuario.infrastructure.repository;
 
 
 import com.javanauta.apiusuario.infrastructure.entity.Endereco;
